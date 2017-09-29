@@ -15,7 +15,7 @@
         
     <div class="container-fluid">
  
-            
+    
 <!-- pantalla de quieres jugar  -->
             <div id= "bienvenida" class="pantalla">
             
@@ -24,17 +24,17 @@
                 <div class= "elegir">   
                  <label class="radio-inline">
                 
-                 <button type="button" id = "si" class="btn btn-info tamano">SI</button>
-
+                 <button type="button" id ="si" class="btn btn-info tamano">SI</button>
+                     
 
                  </label>
                  <label class="radio-inline">
-                  <button type="button" id ="no" class="btn btn-info">NO</button>
+                  <button type="button" id ="no" class="btn btn-info tamano">NO</button>
 
                  </label>
                 </div> 
                 
-            </div>
+            </div> 
                 
                            
    <!-- pantalla de no querer jugar  --> 
@@ -43,44 +43,81 @@
             
                 <h2> ¡Siento que no quieras jugar!</h2>
                 <h3> ¡Otra vez será!</h3>
+                
+                <button type="button" id= "inicio" class="btn btn-primary btn-lg btn-block margen">Volver a Inicio</button>
             </div>
         
             
     <!-- pantalla de jugar par o impar  -->        
              <div id= "paroimpar" class="pantalla">
-            
-            
+                 
+                 <h2 class= "margen"> Ahora, elige número: <br> Par o Impar </h2>
+                 
+                <div class= "elegir">   
+                    <label class="radio-inline">
+                    <button type="button" id = "par" class="btn btn-info tamano">PAR</button>
+                
+                 </label>
+                    <label class="radio-inline">
+                    <button type="button" id ="impar" class="btn btn-info tamano">IMPAR</button>
+
+                    </label>
+                    
+                <div id='siguiente' class = 'margen'>
+                    <button type="button" class="btn btn-primary">Siguiente</button>
+                </div>
+                </div> 
+                
             </div>
-    <!-- pantalla elige un numero  -->        
+    <!-- pantalla elige un numero  --> 
+        
              <div id= "eligenumero" class="pantalla">
-            
-            
+                 
+                <h2 class= "margen"> Elige número <br> Del 0 al 9 ¡Acuérdate! </h2> 
+              <div class= "centrar"> 
+                <input type="number" max="9" min="0">
+              </div>  
+                 
+                 <div id='siguiente1' class = 'margen centrar'>
+                <button type="button" class="btn btn-primary">Siguiente</button>
+                </div>
             </div>
-      <!-- pantalla de valoración  -->      
-             <div id class= "valoracion" class="pantalla">
+        
+<!--    pantalla elige la maquina-->
+        
+            <div id= "eligemaquina" class="pantalla">
             
-            
-            </div>
+            <h2 class= "margen"> Ahora:  <br> Elige el ordenador. ¡Suerte! </h2> 
+           
+        
+            <div id='siguiente2' class = 'margen centrar'>
+                <button type="button" class="btn btn-primary">Siguiente</button>
+             </div>
+        
+           </div>
             
        <!-- pantalla de resultado  -->     
-             <div id class= "resultado" class="pantalla">
-            
-            
+             <div id= "resultado" class="pantalla">
+                 <div class= "ganador">
+                 
+                <h2 class= "margen ganador"> <br> ¡Enhorabuena has ganado! </h2> 
+                </div>
+                 <div class= "perdedor">
+                <h2 class= "margen perdedor"> <br> ¡Lo siento, has perdido! </h2> 
+                </div>
+           
+                
             </div>
-        <!-- pantalla de ganador  -->     
-             <div id class= "ganador" class="pantalla">
-            
-            
-            </div>
-            
-            
-            
-        
-            
-    </div>
+
+          
+        </div>
         
     
         
-            
+<!--     <script type="text/javascript" src="script.js"></script>       -->
+        
+         <script src='console.js'></script>
+        
 	</body>
+    
 </html>

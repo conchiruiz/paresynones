@@ -4,13 +4,18 @@
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 50px;
+    
 }
 body{
    
-    
+    background-image: url(fondo.png);
     background-color: violet;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+h1, h2{
+    margin-top: 50px;
+}
 h1, h2, h3{
     text-align: center;
     color: blueviolet;
@@ -20,10 +25,21 @@ h1, h2, h3{
     margin-top: 100px;
     
 }
-#nojuega, #paroimpar,#eligenumero, #valoracion, #resultado, #ganador{
-    display: none;
+#nojuega, #paroimpar,#eligenumero, #eligemaquina, #resultado{ 
+   display: none;
+
 }
 .tamano{
+    padding: 30px;
+}
+#inicio{
+    text-align: center;
+}
+.margen{
     
-    margin: 20px;
+    margin-top: 50px;
+}
+.centrar{
+     text-align: center;
+     margin-top: 50px;
 }
