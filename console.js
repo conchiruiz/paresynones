@@ -1,18 +1,43 @@
+var jugador, maquina, pares, nones, numJugador, numMaquina, suma, resultado;
 
-var jugador = 'pares';
-var maquina = 'nones';
-var jugadaJugador = 7;
-console.log(jugadaJugador);
-var jugadaMaquina = Match.floor(Math.random()*11);
-console.log(jugadaMaquina);
-var resultado = jugadaJugador+jugadaMaquina;
-console.log(resultado);
-var resultado = resultado%2;
-console.log(resultado);
-if (resultado===jugador){
-    console.log('ganan pares')
-}
+pares = false;
+nones = true;
 
-if (resultado===maquina){
-    console.log('ganan impares')
-}
+if(pares){jugador = "pares";
+maquina = "nones"}else{
+jugador = "nones";
+maquina = "pares"
+};
+
+console.log("Jugador elige " + jugador);
+console.log("Maquina elige " + maquina);
+
+numJugador = 7;
+numMaquina = Math.floor(Math.random()*11);
+
+console.log(numJugador);
+console.log(numMaquina);
+
+suma = numJugador + numMaquina;
+
+console.log(suma);
+
+if(suma%2 === 0){resultado = "pares"}
+if(suma%2 === 1){resultado = "nones"};
+
+console.log(resultado);
+
+function juego(){
+if(resultado === "pares" && resultado === jugador){
+return "Han salido pares y has ganado!!"};
+if(resultado === "pares" && resultado !==jugador){
+return "Han salido pares y has perdido!!"};
+
+if(resultado === "nones" && resultado === jugador){
+return "Han salido nones y has ganado!!"};
+if(resultado === "nones" && resultado !==jugador){
+return "Han salido nones y has perdido!!"};
+};
+
+console.log(juego());
+       

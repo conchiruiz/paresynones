@@ -18,21 +18,26 @@
     
 <!-- pantalla de quieres jugar  -->
             <div id= "bienvenida" class="pantalla">
-            
+                
+                <h1>PARES ó NONES</h1>
+
                 <h1>¡Hola!, ¿Quieres jugar conmigo?</h1>
                 
                 <div class= "elegir">   
                  <label class="radio-inline">
                 
-                 <button type="button" id ="si" class="btn btn-info tamano">SI</button>
+                    <button type="button" id ="si" class="btn btn-info tamano">SI</button>
                      
 
                  </label>
                  <label class="radio-inline">
-                  <button type="button" id ="no" class="btn btn-info tamano">NO</button>
-
+                    <button type="button" id ="no" class="btn btn-info tamano">NO</button>
+              
                  </label>
+               
                 </div> 
+                
+             <img src="n%C3%BAmeros_enteros.gif" class="img-rounded centro" alt="Cinque Terre" width="350" height="300">
                 
             </div> 
                 
@@ -41,72 +46,100 @@
         
             <div id= "nojuega" class="pantalla">
             
-                <h2> ¡Siento que no quieras jugar!</h2>
-                <h3> ¡Otra vez será!</h3>
+                <h1> ¡Siento que no quieras jugar!</h1>
+                <h2> ¡Otra vez será!</h2>
                 
-                <button type="button" id= "inicio" class="btn btn-primary btn-lg btn-block margen">Volver a Inicio</button>
+            <div class= "botoninicio">
+                <button type="button" id ="inicio" class="btn btn-info tamano">INICIO</button>
+                
+                </div>
             </div>
         
             
     <!-- pantalla de jugar par o impar  -->        
              <div id= "paroimpar" class="pantalla">
                  
-                 <h2 class= "margen"> Ahora, elige número: <br> Par o Impar </h2>
+                 <h1 class= "margen"> Ahora, elige número: <br> <br> Par o Impar </h1>
                  
                 <div class= "elegir">   
                     <label class="radio-inline">
-                    <button type="button" id = "par" class="btn btn-info tamano">PAR</button>
-                
+                 
+                    
+                    <input type="radio" name="optionsRadios" id="par" class="texto" value="par"> <br><p> PAR</p>
                  </label>
                     <label class="radio-inline">
-                    <button type="button" id ="impar" class="btn btn-info tamano">IMPAR</button>
 
+                    <input type="radio" name="optionsRadios" id="impar" class="texto" value="impar"> <br><p> IMPAR</p>   
                     </label>
+            
                     
                 <div id='siguiente' class = 'margen'>
-                    <button type="button" class="btn btn-primary">Siguiente</button>
+                    <button type="button" class="btn btn-info">Siguiente</button>
                 </div>
                 </div> 
+                 
+                 
                 
             </div>
     <!-- pantalla elige un numero  --> 
         
              <div id= "eligenumero" class="pantalla">
                  
-                <h2 class= "margen"> Elige número <br> Del 0 al 9 ¡Acuérdate! </h2> 
+                <h1 class= "margen"> Elige número <br> ¡Del 0 al 10, Acuérdate! </h1> 
               <div class= "centrar"> 
-                <input type="number" max="9" min="0">
+                <input id= 'eligenumero1' type="number" max="10" min="0">
               </div>  
+            
                  
                  <div id='siguiente1' class = 'margen centrar'>
-                <button type="button" class="btn btn-primary">Siguiente</button>
+                <button type="button" class="btn btn-info">Siguiente</button>
+                     
                 </div>
+        
+                <img src="TREN.jpg" class="img-rounded"  width="400" height="400"> 
+
             </div>
         
+            
+
 <!--    pantalla elige la maquina-->
         
             <div id= "eligemaquina" class="pantalla">
-            
-            <h2 class= "margen"> Ahora:  <br> Elige el ordenador. ¡Suerte! </h2> 
+            <div id= "displayj"></div>
+          
+                <h1 class= "margen"> Ahora:  <br> Elige el ordenador. ¡Suerte! </h1> 
+                <br>
            
-        
+             <div id= "displaym"></div>
             <div id='siguiente2' class = 'margen centrar'>
-                <button type="button" class="btn btn-primary">Siguiente</button>
+                
+                 
+                <button type="button" class="btn btn-info">Siguiente</button>
+                
              </div>
+            <img src="ajax_loader.gif" class="img-rounded" alt="Cinque Terre" width="350" height="300">
         
            </div>
             
        <!-- pantalla de resultado  -->     
              <div id= "resultado" class="pantalla">
-                 <div class= "ganador">
+               
+                 <div id= "ganador">
                  
-                <h2 class= "margen ganador"> <br> ¡Enhorabuena has ganado! </h2> 
+                <h1 class= "final"> <br> ¡Enhorabuena has ganado! </h1> 
                 </div>
-                 <div class= "perdedor">
-                <h2 class= "margen perdedor"> <br> ¡Lo siento, has perdido! </h2> 
+                 
+                 <div id= "perdedor">
+                <h1 class= "final"> <br> ¡Lo siento, has perdido! </h1> 
                 </div>
+                 <br>
+                     
+        <img src="MANOS.jpg" class="img-rounded" width="400" height="350">
            
-                
+                 
+                <h1 class= "mganador"> <br> ¡JUGAMOS OTRA VEZ! </h1>
+
+        
             </div>
 
           
@@ -114,9 +147,9 @@
         
     
         
-<!--     <script type="text/javascript" src="script.js"></script>       -->
+     <script type="text/javascript" src="script.js"></script>       
         
-         <script src='console.js'></script>
+
         
 	</body>
     

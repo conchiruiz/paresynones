@@ -1,6 +1,6 @@
 
 .container-fluid{
-    border:solid 3px blueviolet;
+    border:solid 3px violet;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 50px;
@@ -8,31 +8,35 @@
 }
 body{
    
-    background-image: url(fondo.png);
+    background-image: url(fondo1.jpg);
     background-color: violet;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 h1, h2{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 h1, h2, h3{
     text-align: center;
-    color: blueviolet;
+    color: violet;
+    font-size: bold;
 }
 .elegir{
     text-align: center;
-    margin-top: 100px;
-    
+   
 }
-#nojuega, #paroimpar,#eligenumero, #eligemaquina, #resultado{ 
+
+#nojuega, #paroimpar, #eligenumero, #eligemaquina, #resultado{ 
    display: none;
 
 }
 .tamano{
     padding: 30px;
+    margin-top: 50px;
 }
-#inicio{
+.volver{
+    
     text-align: center;
 }
 .margen{
@@ -43,3 +47,38 @@ h1, h2, h3{
      text-align: center;
      margin-top: 50px;
 }
+
+ .centro{
+     text-align: center;
+    
+}
+.botoninicio{
+     text-align: center;
+}
+
+.texto{
+    padding: 40px;
+}
+#displayj, #displaym{
+    text-align: center;
+    color: violet;
+    font-size: bold;
+}
+
+.mganador{
+     text-align: center;
+    color: violet;
+    font-size: 40px;
+}
+
+
+#ganador, #perdedor{
+    position: absolute;
+    left: 550px;
+    top: 150px;
+    color: violet;
+    font-size: 40px;
+    
+    
+}
+
